@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+      
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
       
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
       
@@ -45,7 +47,7 @@
 
         
         .image{
-            width:350px;
+            width:450px;
             height:700px;
             object-fit:cover;
             align-content:center;
@@ -78,6 +80,46 @@
             font-weight:600;
             font-size: 22px;
         }
+        
+        
+    * {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
     </style>
   </head>
     
@@ -98,7 +140,7 @@
                 <p>The Bay Area has a unique climate that makes up one of the most biodiverse hotspots in the world. From coastal marshes to drought-tolerant hills, the local wildlife has adapted to specific niches - and these creatures are everywhere, if you know how to look. The mild Mediterranean climate is especially kind to cold-blooded animals, which rely on external conditions to maintain body temperature. These animals are often feared and reviled by the general public, but they are also incredibly adapted to their surroundings and full of character.</p>
                 
                 
-                <img class="snek" align=center src="https://media.journalism.berkeley.edu/upload/2020/08/159717798053ee1f0.jpg">
+                <img src="https://media.journalism.berkeley.edu/upload/2020/08/159717798053ee1f0.jpg" class="img-fluid" alt="Ben with garter snake">
                 
                 <br/>
                 <br/>
@@ -112,7 +154,8 @@
                 <q>You don’t really realize how many animals are out there in these little cracks and crevices, hiding away in the environment, until you start herping. So just be ready to see the whole world of nature open up in front of you.</q>
             </div>
         </div> 
-        
+     
+      
         <div class="row justify-content-center mb-5">
             <div class="col-12 col-md-10">
                 
@@ -128,17 +171,22 @@
             </div>
                 
             </div>
-        </div>  
+        </div> 
+      </div>
            
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10">
             <p>These are two examples of prime herping habitat. The log on the left is somewhat embedded into the leaf litter, creating space underneath for animals to live. The rocky outcrop on the right is a great spot for sunning lizards and snakes, or they may hide underneath for shade.</p>
             
             <p>Don’t be afraid to go off the trail, but make sure you watch where you’re going - rattlesnakes sometimes hide in tall grass. Look for fallen logs or other decomposing vegetation, which attracts the insects that herps like to eat. </p>
             <br/>
                 
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1G0MxcY5zDusDn78LdCFE4S7W2JIWvSQd" width="800" height="600"></iframe>
-             </div>
-        </div> 
-                
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1G0MxcY5zDusDn78LdCFE4S7W2JIWvSQd" width="100%" height="600"></iframe>
+            </div>
+          </div>
+      </div>
+                        
         <div class="container">
                 
             <div class="row justify-content-center mb-5">
@@ -154,12 +202,14 @@
                 
             <br/>
             <br/>
-                <ul>To stay safe, Ben recommends:
+               To stay safe, Ben recommends:
+                    <ul>
                     <li>go with a friend, especially on your first few trips</li>
                     <li>know the species you’re dealing with, especially the venomous species in the area</li>
                     <li>know your environment</li>
                     <li>be aware of your worst-case scenarios and what the procedure is</li>
                 </ul>
+                
                
                 <p>In California, the only venomous snake is the rattlesnake. Knowing this information allows you to prepare a plan in case you get bitten, and it also informs you that the other species aren’t life-threatening</p>
                 </div>
@@ -167,24 +217,56 @@
         </div>  
       
       
-        
+    <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-12 col-md-10">
                 <h2>Common Species</h2>
                 <p>There are over 50 species of reptiles and amphibians in the Bay Area. Some, like the Western fence lizard, are extremely common, while others are more reclusive in nature. While it's hard to predict what you'll find on any given hike, here's a small sampling of some species you could encounter.</p>
                 
-        <div style="display: flex">
-        <img class="landscape" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/159712568670f6cbf.jpg">
-        <img class="landscape" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/1597125768fd8be79.jpg">
-        <img class="landscape" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/1597132603b654368.jpg">
-        <img class="landscape" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/15971327981fcff33.jpg">
-        </div>
-        <div style="display: flex">
-        <img class="landscape" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/1597132840f0250c2.jpg">
-        <img class="landscape" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/15971333692bca01b.jpg">
-        </div>    
+
+<div class="slideshow-container">
+
+<div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/1597133431556192a.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/15971349055225a89.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/1597125768fd8be79.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/15971327981fcff33.jpg" style="width:100%">
+  </div>
+  
+    <div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/1597132603b654368.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/1597132840f0250c2.jpg" style="width:100%">
+  </div>
+  
+  <div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/15971333692bca01b.jpg" style="width:100%">
+  </div>
+
+
+<div class="mySlides1">
+    <img src="https://media.journalism.berkeley.edu/upload/2020/08/1597132627af3e997.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
     </div>
-   
+    </div>
+    </div>
             
     <div class="container">
         <div class="row justify-content-center mb-5">
@@ -195,6 +277,8 @@
             <p>Abhas Misraraj, who was on the team that developed Seek, designed the app to make nature more accessible to everyone, even those who are brand new to the subject. You can take a photo of any living creature, plant or animal, and the app will attempt to identify it for you. By adding challenges and badges for collecting a certain number of species, Seek essentially turns animal and plant identifying into a game. This design was intentional - Abhas says that he created his own dream app.</p>
             <q>I essentially designed Seek for my own five year old self. I designed it because, if I was 5 years old and I had something like Seek, I would read every species page for every species near me.</q>
             <br/>
+            
+            
             <div style="display: flex">
             <img class="image" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/15970426265ca7e2b.jpg">
             <img class="image" style="margin-right: 10px;" src="https://media.journalism.berkeley.edu/upload/2020/08/15970435744de7026.jpg">
@@ -222,6 +306,29 @@
     </div><!-- closing container -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      
+    <script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
   </body>
 </html>
