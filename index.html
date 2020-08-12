@@ -98,6 +98,36 @@
             width:400px;
         }
         
+        .img {
+  width: 300px;
+  height: 300px;
+}
+
+.container {
+  margin-top: 10px;
+  position: relative;
+}
+
+.hiding {
+  z-index: 1;
+  /* z-index lets me control which layer an element is on. I want rock to show up on top of the hiding element */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.rock {
+  position: absolute;
+  z-index: 2;
+  transition: all 1s;
+  /* For tweening */
+}
+
+/* The second rock will physically move */
+.lifted {
+  margin-left: 310px;
+}
+        
     * {box-sizing: border-box}
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
@@ -136,6 +166,9 @@ img {vertical-align: middle;}
   background-color: #f1f1f1;
   color: black;
 }
+        
+/* moving rock!! */
+    
     </style>
   </head>
     
@@ -169,6 +202,29 @@ img {vertical-align: middle;}
                 <h2>What is Herping?</h2>
                 <p>Herpetology comes from the Greek word <i>herpein</i>, meaning “to creep”. Herpetology, therefore, is the study of reptiles and amphibians, which are collectively (and lovingly) referred to as “herps”. To go “herping” is to go searching for these animals in their natural habitat. Despite the funny name, herping is a fantastic way to find animals around you.
                 </p>
+                
+                <!-- Actually moving the rock -->
+<div class="container" id="container">
+  <img class="img hiding" src="https://cdn.shopify.com/s/files/1/0080/8372/products/2018_chrisbuzelli_hummingbird_00_300x300.png?v=1575210265" />
+  <img class="img rock" id="rock" src="https://www.rd-textures.com/wp-content/uploads/2017/08/RO-07_kugel0020-300x300.png" />
+</div>
+<script>
+  var rock = document.getElementById("rock");
+  var container = document.getElementById("container");
+
+  // Listen for when someone clicks on element and add className if it's not applied, or remove it if it's already applied.
+  // This is for lifting up and down the rock
+  container.addEventListener("click", function() {
+    // Check if this rock is already "lifted"
+    if (rock.classList.contains("lifted")) {
+      rock.classList.remove("lifted");
+    } else {
+      rock.classList.add("lifted");
+    }
+  });
+
+</script>
+<!--END moving rock-->
 
                 <p>Ben Pridonoff, a wildlife biologist, recommends herping for beginners and experts alike. While activities such as birdwatching require some equipment, herping is accessible to everyone. As an added bonus, you can get much closer to the animals you find! You don’t need a lot of knowledge to start, only a healthy dose of curiosity and a willingness to get your hands dirty.
                 </p>
