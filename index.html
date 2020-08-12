@@ -23,7 +23,7 @@
             }
      
         body{
-            background-color: #94b59e
+            background-color: #e2f3e7
         }
         
         .jumbotron{
@@ -103,9 +103,11 @@
   height: 300px;
 }
 
-.container {
+.container1 {
   margin-top: 10px;
   position: relative;
+    height: 350px;
+    width: 300px;
 }
 
 .hiding {
@@ -204,17 +206,17 @@ img {vertical-align: middle;}
                 </p>
                 
                 <!-- Actually moving the rock -->
-<div class="container" id="container">
+<div class="container1" id="container1">
   <img class="img hiding" src="https://cdn.shopify.com/s/files/1/0080/8372/products/2018_chrisbuzelli_hummingbird_00_300x300.png?v=1575210265" />
   <img class="img rock" id="rock" src="https://www.rd-textures.com/wp-content/uploads/2017/08/RO-07_kugel0020-300x300.png" />
 </div>
 <script>
   var rock = document.getElementById("rock");
-  var container = document.getElementById("container");
+  var container = document.getElementById("container1");
 
   // Listen for when someone clicks on element and add className if it's not applied, or remove it if it's already applied.
   // This is for lifting up and down the rock
-  container.addEventListener("click", function() {
+  container1.addEventListener("click", function() {
     // Check if this rock is already "lifted"
     if (rock.classList.contains("lifted")) {
       rock.classList.remove("lifted");
